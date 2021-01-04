@@ -11,10 +11,12 @@ import { MIDIContextProvider } from './contexts/MIDIContext'
 
 import Home from './pages/Home'
 import NotesUI from './pages/NotesUI'
+import Compose from './pages/Compose'
 
 import Toolbar from "./components/toolbar/Toolbar"
 
 const App = () => {
+
     return (
         <Router>
             <MIDIContextProvider>
@@ -23,6 +25,9 @@ const App = () => {
                 <Switch>
                     <Route path='/notes'>
                         <NotesUI />
+                    </Route>
+                    <Route path='/compose'>
+                        <Compose />
                     </Route>
                     <Route path='/'>
                         <Home />

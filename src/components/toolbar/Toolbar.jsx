@@ -39,6 +39,9 @@ const Toolbar = () => {
                 <MenuItem to="/notes" iscurrent={location.pathname === '/notes'} >
                     Notes
                 </MenuItem>
+                <MenuItem to="/compose" iscurrent={location.pathname === '/compose'} >
+                    Compose
+                </MenuItem>
             </Menu>
             <ConnectDeviceButton />
         </Container>
